@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin container{
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $query: map.get($breakpoints, $breakpoint);
+
+  @if $query {
+    @media (#{$query}) {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

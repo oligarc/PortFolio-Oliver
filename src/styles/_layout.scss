@@ -1,0 +1,13 @@
+@use "globals" as *;
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container;
+}
+
+.container{
+    @include container;
+}
+
