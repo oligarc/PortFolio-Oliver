@@ -1,2 +1,7 @@
 @use "globals" as *;
 
+main{
+    background-image: url(./assets/fondoWeb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
