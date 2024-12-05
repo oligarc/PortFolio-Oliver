@@ -4,4 +4,114 @@ main{
     background-image: url(./assets/fondoWeb.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    #aboutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 300px;
+        h1{
+            font-size: $size-h1;
+            font-family: '8-BIT';
+        }
+
+        p{
+            font-size: $size-parrafo;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        
+
+        button{
+            padding-top: $padding-1-per-cent;
+            padding-bottom: $padding-1-per-cent;
+            padding-left: $padding-5-per-cent;
+            padding-right: $padding-5-per-cent;
+            background-color: $button-projects;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            border: none;
+            &:hover {
+                background-color: $button-projects-hover;
+                transform: translateY(-2px);
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+              }
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #projectSection{
+        
+        text-align: center;
+
+        h2{
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .projects-container{
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: $gap-for-cards;
+            font-family: 'Roboto', Arial, sans-serif;
+
+            .project-card {
+                background: $background-header;
+                border: 1px solid $color-for-borders;
+                border-radius: $border-radius-for-cards;
+                padding: $padding-2-per-cent;
+                width: $width-for-cards;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+                &:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                  background-color: $background-color-hover-cards;
+                }
+            
+                h3 {
+                  font-size: $size-h3;
+                  color: $button-projects;
+                }
+            
+                p {
+                  font-size:$size-parrafo-card ;
+                  margin: 0.5rem 0;
+                  color: $color-p-for-cards;
+                  margin-bottom: 20px;
+                }
+                
+                button{
+                    padding-top: $padding-2-per-cent;
+                    padding-bottom: $padding-2-per-cent;
+                    padding-left: $padding-5-per-cent;
+                    padding-right: $padding-5-per-cent;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    border: none;
+                    a {
+                        color: $button-projects;
+                        text-decoration: none;
+                        font-weight: bold;
+                  
+                        &:hover {
+                          text-decoration: underline;
+                        }
+                      }
+                }
+                
+            }
+            
+        }
+
+    }
 }

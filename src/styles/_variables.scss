@@ -3,19 +3,30 @@
     src: url(../assets/8bitOperatorPlusSC-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
 $container-max-width:1200px;
 $container-padding:15px;
 
 /* colores */
 $background-header: rgb(255 255 255);
 $full-black: rgb(0 0 0);
-/* tamaños */
+$button-projects:#0077cc;
+$button-projects-hover:#005fa3;
+$color-for-borders:#ddd;
+$color-p-for-cards:#333;
+$background-color-hover-cards:#f9f9f9;
 
+/* tamaños */
 $size-extra-small: 0.48rem;
 $size-small: 0.56rem;
 $size-h4: 0.64rem;
-$size-parrafo: 0.64rem;
-$size-h3: 1.04rem;
+$size-parrafo: 1.31rem;
+$size-parrafo-card:1.20rem;
+$size-h3: 1.52rem;
 $size-h2: 1.68rem;
 $size-h1: 2.56rem;
 
@@ -25,16 +36,20 @@ $padding-15-per-cent:15%;
 $padding-10-per-cent:10%;
 $padding-5-per-cent:5%;
 $padding-2-per-cent:2%;
+$padding-1-per-cent:1%;
 $padding-button:18%;
 $padding-15-px:15px;
 $padding-10-px:10px;
 
 /* margins */
-
 $margin-right-li-header:40px;
 
-
-
 /* widths */
-
 $width-img-header:80%;
+$width-for-cards:300px;
+
+/* gaps */
+$gap-for-cards:2rem;
+
+/* border-radius */
+$border-radius-for-cards:10px;

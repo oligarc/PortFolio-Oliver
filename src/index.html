@@ -15,10 +15,10 @@
         <div class="hea-2">
           <nav>
             <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">PROJECTS</a></li>
-              <li><a href="">CONTACT</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#aboutSection">ABOUT</a></li>
+              <li><a href="#projectSection">PROJECTS</a></li>
+              <li><a href="#contactSection">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -34,7 +34,78 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <!-- = About section = -->
+        <section id="aboutSection">
+          <h1>Hey, It's Óliver Over Here!</h1>
+          <p>
+            A passionate Web Developer interested in both Frontend and Backend
+            development, <br />
+            with a strong focus on creating impactful user experiences.
+          </p>
+          <button><a href="#projectSection">PROJECTS</a></button>
+        </section>
+
+        <!-- = Projects section = -->
+        <section id="projectSection">
+          <h2>Projects</h2>
+          <div class="projects-container">
+            <div class="project-card">
+              <h3>TMDB Website</h3>
+              <p>
+                A web page made with a partner where we use the TMDB API and
+                make our vision come to life, allowing users to explore movies,
+                actors, and various data in an interactive way.
+              </p>
+              <p>
+                <strong>Technologies</strong>: <br />
+                JS,HTML5,VITE,CSS,Git
+              </p>
+              <button>
+                <a href="https://github.com/oligarc/TMDB-PROJECT"
+                  >View on Github</a
+                >
+              </button>
+            </div>
+            <div class="project-card">
+              <h3>Library</h3>
+              <p>
+                A web-based library system developed with the goal of managing
+                book loans, user records, and library data, providing efficient
+                tools for cataloging and searching.
+              </p>
+              <p>
+                <strong>Technologies</strong>: <br />
+                Java,JSP,JDBC,BS,JS
+              </p>
+              <button>
+                <a href="https://github.com/oligarc/BibliotecaWeb"
+                  >View on Github</a
+                >
+              </button>
+            </div>
+            <div class="project-card">
+              <h3>SHREK SASS VITE</h3>
+              <p>
+                A Shrek based web page built with Sass, Vite, and Figma. It
+                showcases modern web design elements and responsive layouts used
+                for enriching the user experience.
+              </p>
+              <p><strong>Technologies</strong>: Sass, Vite, Figma, Git</p>
+              <button>
+                <a href="https://github.com/oligarc/SHREK-SASS-VITE"
+                  >View on Github</a
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- = Contact section = -->
+        <section id="contactSection"></section>
+      </div>
+    </main>
     <footer></footer>
 
     <script type="module" src="/main.js"></script>
