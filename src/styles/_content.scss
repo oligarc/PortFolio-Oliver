@@ -2,8 +2,8 @@
 
 main{
     background-image: url(./assets/fondoWeb.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
 
     #aboutSection{
         display: flex;
@@ -11,15 +11,17 @@ main{
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-bottom: 300px;
+        margin-bottom: 480px;
         h1{
             font-size: $size-h1;
             font-family: '8-BIT';
+            margin-bottom: $margin-bottom-about-section;
         }
 
         p{
             font-size: $size-parrafo;
             font-family: 'Roboto', Arial, sans-serif;
+            margin-bottom: 50px;
         }
 
         
@@ -43,6 +45,7 @@ main{
                 text-decoration: none;
                 color: #fff;
                 font-weight: bold;
+                font-family: '8-BIT';
             }
         }
     }
@@ -50,9 +53,10 @@ main{
     #projectSection{
         
         text-align: center;
+        font-family: 'Roboto', Arial, sans-serif;
 
         h2{
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: '8-BIT';
         }
 
         .projects-container{
@@ -80,6 +84,7 @@ main{
             
                 h3 {
                   font-size: $size-h3;
+                  font-family: '8-BIT';
                   color: $button-projects;
                 }
             
@@ -102,6 +107,7 @@ main{
                         color: $button-projects;
                         text-decoration: none;
                         font-weight: bold;
+                        font-family: '8-BIT';
                   
                         &:hover {
                           text-decoration: underline;
@@ -114,4 +120,81 @@ main{
         }
 
     }
+
+    #contactSection {
+        text-align: center;
+        font-family: 'Roboto', Arial, sans-serif;
+        padding: $padding-15-per-cent 20px;
+    
+        h2 {
+            font-family: '8-BIT', sans-serif;
+            font-size: $size-h2;
+            margin-bottom: $padding-10-px;
+        }
+    
+        p {
+            font-size: $size-parrafo;
+            margin-bottom: $padding-15-px;
+            color: $color-p-for-cards;
+        }
+    
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $gap-for-cards;
+            max-width: $container-max-width;
+            margin: 0 auto;
+            padding: $padding-15-px;
+    
+            .form-group {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: $padding-10-px;
+            }
+    
+            label {
+                font-weight: bold;
+                margin-bottom: $padding-5-per-cent;
+                font-size: $size-small;
+            }
+    
+            input,
+            textarea {
+                width: 100%;
+                padding: $padding-10-px;
+                border-radius: $border-radius-for-cards;
+                border: 1px solid $color-for-borders;
+                font-size: $size-parrafo-card;
+                margin-bottom: $padding-10-px;
+                background-color: #f9f9f9;
+    
+                &:focus {
+                    border-color: $button-projects;
+                    outline: none;
+                }
+            }
+    
+            textarea {
+                resize: vertical;
+                min-height: 150px;
+            }
+    
+            button {
+                padding: $padding-1-per-cent $padding-5-per-cent;
+                background-color: $button-projects;
+                color: white;
+                border: none;
+                border-radius: $border-radius-for-cards;
+                cursor: pointer;
+                font-size: $size-parrafo;
+    
+                &:hover {
+                    background-color: $button-projects-hover;
+                }
+            }
+        }
+    }
+    
 }

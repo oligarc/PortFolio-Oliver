@@ -1,1 +1,39 @@
 @use "globals" as *;
+
+footer {
+  background-color: $footer-background-color;
+  font-family: 'Roboto', Arial, sans-serif;
+
+  .container {
+    @include container;
+  }
+
+  .footer-content {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include container;
+
+      .contact-info,
+      .social-links,
+      .quick-links {
+        flex: 1;
+        padding: $padding-15-px;
+
+        p, a {
+            color: $color-p-for-cards;
+          font-size: $size-parrafo;
+          margin-right:$margin-right-li-header;
+          text-decoration: none;
+
+          &:hover {
+            color: $button-projects;
+          }
+        }
+      }
+    }
+  }
+}
+
+  

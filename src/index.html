@@ -86,7 +86,7 @@
               </button>
             </div>
             <div class="project-card">
-              <h3>SHREK SASS VITE</h3>
+              <h3>SHREK WEB</h3>
               <p>
                 A Shrek based web page built with Sass, Vite, and Figma. It
                 showcases modern web design elements and responsive layouts used
@@ -103,10 +103,85 @@
         </section>
 
         <!-- = Contact section = -->
-        <section id="contactSection"></section>
+        <section id="contactSection">
+          <h2>Contact Me</h2>
+          <p>
+            If you have any questions or want to get in touch, feel free to
+            reach out to me using the form below:
+          </p>
+
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Please enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Please enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Please enter your message"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="contact-info">
+              <p>&copy; 2024 Oligarc.</p>
+              <p>
+                Email:
+                <a href="mailto:oli17594@gmail.com">oli17594@gmail.com</a>
+              </p>
+              <p>Telephone: +34 687 14 89 74</p>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/%C3%B3liver-garc%C3%ADa-rodr%C3%ADguez/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://github.com/oligarc" target="_blank">GitHub</a>
+            </div>
+
+            <div class="quick-links">
+              <a href="#aboutSection">About me</a>
+              <a href="#projectSection">Projects</a>
+              <a href="#contactSection">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
