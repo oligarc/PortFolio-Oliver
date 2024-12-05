@@ -1,1 +1,42 @@
 @use "globals" as *;
+
+header{
+    background-color: $background-header;
+    padding-top: $padding-5-per-cent;
+    padding-bottom: $padding-5-per-cent;
+    font-family: '8-BIT';
+
+    .hea-1{
+        img{
+            width: $width-img-header;
+        }
+    }
+
+    .hea-2{
+        nav{
+            font-size: $size-h2;
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline;
+                    margin-right: $margin-right-li-header;
+                    a{
+                        text-decoration: none;
+                        color: $full-black;
+                    }
+                }
+            }
+        }
+    }
+
+    .hea-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            img{
+                width: $width-img-header;
+            }
+        }
+    }
+}
