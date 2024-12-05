@@ -124,7 +124,8 @@ main{
     #contactSection {
         text-align: center;
         font-family: 'Roboto', Arial, sans-serif;
-        padding: $padding-15-per-cent 20px;
+        padding-top: $padding-15-per-cent;
+        
     
         h2 {
             font-family: '8-BIT', sans-serif;
@@ -158,6 +159,7 @@ main{
                 font-weight: bold;
                 margin-bottom: $padding-5-per-cent;
                 font-size: $size-small;
+                font-family: '8-BIT', sans-serif;
             }
     
             input,
@@ -189,7 +191,7 @@ main{
                 border-radius: $border-radius-for-cards;
                 cursor: pointer;
                 font-size: $size-parrafo;
-    
+                font-family: '8-BIT', sans-serif;
                 &:hover {
                     background-color: $button-projects-hover;
                 }
