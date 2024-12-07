@@ -50,9 +50,14 @@ $margin-bottom-about-section:1.10em;
 /* widths */
 $width-img-header:80%;
 $width-for-cards:300px;
+$width-for-img-header:70px;
 
 /* gaps */
 $gap-for-cards:2rem;
 
 /* border-radius */
 $border-radius-for-cards:10px;
+
+$breakpoints:(
+    "medium":"max-width: 800px"
+);
