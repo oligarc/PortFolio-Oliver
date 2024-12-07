@@ -1,8 +1,10 @@
 @use "globals" as *;
 
+
 footer {
-  background-color: $footer-background-color;
+  background-color: $background-header;
   font-family: 'Roboto', Arial, sans-serif;
+  padding: $padding-5-per-cent 0;
 
   .container {
     @include container;
@@ -10,30 +12,81 @@ footer {
 
   .footer-content {
     .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @include container;
+      
 
-      .contact-info,
-      .social-links,
-      .quick-links {
-        flex: 1;
-        padding: $padding-15-px;
+      @include respond-to("medium") {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        gap: $gap-for-cards; 
+      }
 
-        p, a {
-            color: $color-p-for-cards;
+      .contact-info {
+        p {
           font-size: $size-parrafo;
-          margin-right:$margin-right-li-header;
+          margin-bottom: $padding-10-px;
+
+          a {
+            color: $color-p-for-cards;
+            text-decoration: none;
+
+            &:hover {
+              color: $button-projects;
+            }
+          }
+        }
+
+        @include respond-to("medium") {
+          margin-bottom: $padding-15-px;
+        }
+      }
+
+      .social-links {
+        a {
+          display: inline-block;
+          font-size: $size-parrafo;
+          color: $color-p-for-cards;
           text-decoration: none;
+          margin-right: $padding-10-px;
 
           &:hover {
             color: $button-projects;
+          }
+        }
+
+        @include respond-to("medium") {
+          a {
+            display: block;
+            margin-right: 0; 
+            margin-bottom: $padding-10-px;
+          }
+        }
+      }
+
+      .quick-links {
+        a {
+          display: inline-block;
+          font-size: $size-parrafo;
+          color: $color-p-for-cards;
+          text-decoration: none;
+          margin-right: $padding-10-px;
+
+          &:hover {
+            color: $button-projects;
+          }
+        }
+
+        @include respond-to("medium") {
+          a {
+            display: block; 
+            margin-right: 0; 
+            margin-bottom: $padding-10-px;
           }
         }
       }
     }
   }
 }
+
 
   
