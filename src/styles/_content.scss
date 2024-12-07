@@ -1,7 +1,7 @@
 @use "globals" as *;
 
 main{
-    background-image: url('@/assets/fondoWeb.png');
+    background-image: url('/assets/fondoWeb.png');
     background-size: contain;
     background-repeat: repeat;
 
