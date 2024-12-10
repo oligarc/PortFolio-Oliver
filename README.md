@@ -8,7 +8,7 @@ You can take a snake peek in the following image
 
 ![portfoliopreview.png](/src/assets/portfoliopreview.png)
 
-However, please go directly to the portfolio in the following [link] (https://oligarc.github.io/PortFolio-Oliver/)
+However, please go directly to the portfolio in the following [link](https://oligarc.github.io/PortFolio-Oliver/)
 
 ## Features
 
