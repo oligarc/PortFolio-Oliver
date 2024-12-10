@@ -69,5 +69,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 - [LinkedIn](https://www.linkedin.com/in/%C3%B3liver-garc%C3%ADa-rodr%C3%ADguez/)
-- [GitHub](https://github.com/oligarc
+- [GitHub](https://github.com/oligarc)
    
