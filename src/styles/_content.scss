@@ -11,7 +11,6 @@ main{
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-bottom: 480px;
         h1{
             font-size: $size-h1;
             font-family: '8-BIT';
@@ -49,6 +48,78 @@ main{
             }
         }
     }
+
+    #experienceSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 50px;
+      
+        h2 {
+          font-size: 2.5rem;
+          font-family: '8-BIT';
+          margin-bottom: 40px;
+        }
+      
+        .glide {
+          width: 80%;
+          max-width: 1200px;
+          margin: auto;
+        }
+      
+        .glide__slide {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background-color: #f3f3f3;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+      
+        .glide__arrows {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          z-index: 10;
+          transform: translateY(-50%);
+        }
+      
+        .glide__arrow {
+          background: none;
+          border: none;
+          font-size: 30px; /* Tamaño adecuado para las flechas */
+          color: $button-color; /* Color de las flechas */
+          cursor: pointer;
+          transition: transform 0.3s, color 0.3s;
+      
+          &:hover {
+            color: $button-hover-color; /* Color al pasar el mouse */
+            transform: scale(1.1);
+          }
+        }
+      
+        
+      
+        .glide__pagination {
+          margin-top: 20px;
+          .glide__bullet {
+            background-color: $pagination-color;
+            &:hover {
+              background-color: $pagination-hover-color;
+            }
+          }
+        }
+      }
+      
+      
 
     #projectSection{
         
