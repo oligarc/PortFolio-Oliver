@@ -55,12 +55,11 @@ main{
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 50px;
+        padding: $padding-50-px;
       
         h2 {
-          font-size: 2.5rem;
+          font-size: $size-h1;
           font-family: '8-BIT';
-          margin-bottom: 40px;
         }
       
         .glide {
@@ -75,11 +74,26 @@ main{
           align-items: center;
           justify-content: center;
           text-align: center;
-          background-color: #f3f3f3;
-          padding: 20px;
+          background-color: $background-color-profesional-experience;
+          padding: $padding-20-px;
           border-radius: 8px;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          margin-bottom: 20px;
+          margin-bottom: $padding-20-px;
+
+          h3{
+            font-family: '8-BIT';
+            font-size: 2em;
+            margin-bottom: 0;
+          }
+
+          p{
+            font-size: 1.2em;
+            strong{
+              font-family: '8-BIT';
+            }
+
+            font-family: 'Roboto', Arial, sans-serif;
+          }
         }
       
         .glide__arrows {
@@ -95,18 +109,16 @@ main{
         .glide__arrow {
           background: none;
           border: none;
-          font-size: 30px; /* Tamaño adecuado para las flechas */
-          color: $button-color; /* Color de las flechas */
+          font-size: $size-arrows; 
+          color: $button-color;
           cursor: pointer;
           transition: transform 0.3s, color 0.3s;
       
           &:hover {
-            color: $button-hover-color; /* Color al pasar el mouse */
+            color: $button-hover-color; 
             transform: scale(1.1);
           }
         }
-      
-        
       
         .glide__pagination {
           margin-top: 20px;
@@ -119,8 +131,6 @@ main{
         }
       }
       
-      
-
     #projectSection{
         
         text-align: center;
