@@ -8,7 +8,8 @@ You can take a snake peek in the following image
 
 ![portfoliopreview.png](/src/assets/portfoliopreview.png)
 
-However, please go directly to the portfolio in the following [link](https://oligarc.github.io/PortFolio-Oliver/)
+However, please go directly to the portfolio in the following [link](https://oligarc.github.io/PortFolio-Oliver/)  
+
 You can also go to my Figma Project and see the original version of the web I came with including the desktop and mobile design along with the design system. [There you go](https://www.figma.com/design/Z7ixEWbrBPEduSFngs9AcJ/PORTFOLIO-DESIGN?node-id=0-1&node-type=canvas&t=iYO7iepV4ZTWub16-0)
 
 ## Features
