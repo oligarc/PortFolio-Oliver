@@ -11,5 +11,5 @@ export default defineConfig({
       },
     },
   },
-  base: "./", // Usamos rutas relativas para mayor compatibilidad en GitHub Pages
+  base: "/PortFolio-Oliver/", // Usamos rutas relativas para mayor compatibilidad en GitHub Pages
 });
